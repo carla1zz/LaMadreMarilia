@@ -49,8 +49,8 @@
 		if (plugins.preloader.length && !isNoviBuilder) {
 			pageTransition({
 				page: $('.page'),
-				animDelay: 500,
-				animDuration: 500,
+				animDelay: 1,
+				animDuration: 1,
 				animIn: 'fadeIn',
 				animOut: 'fadeOut',
 				conditions: function (event, link) {
@@ -650,7 +650,7 @@
 		if (plugins.preloader.length) {
 			loaderTimeoutId = setTimeout(function () {
 				if (!windowReady && !isNoviBuilder) plugins.preloader.removeClass('loaded');
-			}, 2000);
+			}, 5000);
 		}
 
 		// Add custom styling options for input[type="radio"]
